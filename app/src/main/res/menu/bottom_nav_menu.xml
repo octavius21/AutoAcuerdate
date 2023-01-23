@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 22/01/23 12:10
+  ~ *  File: bottom_nav_menu.xml
+  ~ *  Last modified: 21/01/23 2:25
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 22/01/23 12:10
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 18/01/23 11:47
+  ~ *  File: bottom_nav_menu.xml
+  ~ *  Last modified: 18/01/23 11:47
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 18/01/23 11:47
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/carListFragment"
+        android:icon="@drawable/ic_round_directions_car_24"
+        android:title="@string/car_menu" />
+
+    <item
+        android:id="@+id/credentialsListFragment"
+        android:icon="@drawable/ic_round_credit_card_24"
+        android:title="@string/credential_menu" />
+
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/map_menu" />
+
+    <!--<item
+        android:id="@+id/navigation_pending"
+        android:title="Pending" />-->
+
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/account_menu" />
+</menu>

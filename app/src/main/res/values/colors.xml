@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 22/01/23 12:10
+  ~ *  File: colors.xml
+  ~ *  Last modified: 20/01/23 22:53
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 22/01/23 12:10
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color_app_theme_white">#006495</color>
+    <color name="second_color_app_theme_white">#6e1cfd</color>
+    <color name="third_color_app_theme_white">#bf0023</color>
+    <color name="error_color_app_theme_white">#ba1a1a</color>
+    <color name="background_color_app_theme_white">#fcfcff</color>
+    <color name="outline_color_app_theme_white">#72787e</color>
+    <color name="primary_color_app_theme_black">#8fcdff</color>
+    <color name="second_color_app_theme_black">#cfbcff</color>
+    <color name="third_color_app_theme_black">#ffb3af</color>
+    <color name="error_color_app_theme_black">#ffb4ab</color>
+    <color name="background_color_app_theme_black">#1a1c1e</color>
+    <color name="outline_color_app_theme_black">#8b9198</color>
+<!--    Color Plates-->
+    <color name="color_plate_yellow">#F6B216</color>
+    <color name="color_plate_pink">#E925FF</color>
+    <color name="color_plate_red">#EC102A</color>
+    <color name="color_plate_blue">#093BED</color>
+    <color name="color_plate_green">#218006</color>
+
+
+</resources>

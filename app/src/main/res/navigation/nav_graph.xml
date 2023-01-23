@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 22/01/23 12:10
+  ~ *  File: nav_graph.xml
+  ~ *  Last modified: 21/01/23 2:27
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 22/01/23 12:10
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carListFragment">
+
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.CarListFragment"
+        android:label="Car"
+        tools:layout="@layout/fragment_car_list" >
+        <action
+            android:id="@+id/action_carListFragment_to_carDetailFragment"
+            app:destination="@id/carDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/credentialsListFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.CredentialsListFragment"
+        android:label="Credentials"
+        tools:layout="@layout/fragment_credentials_list" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.UserFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/carDetailFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.CarDetailFragment"
+        android:label="fragment_car_detail"
+        tools:layout="@layout/fragment_car_detail" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.luocz.autoacuerdate.views.activities.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+</navigation>
