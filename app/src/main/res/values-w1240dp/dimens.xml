@@ -1,0 +1,17 @@
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 02/02/23 12:09
+  ~ *  File: dimens.xml
+  ~ *  Last modified: 02/02/23 12:09
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 02/02/23 12:09
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<resources>
+    <dimen name="activity_horizontal_margin">200dp</dimen>
+</resources>

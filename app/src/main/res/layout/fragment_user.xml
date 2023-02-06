@@ -13,19 +13,6 @@
   ~ ****************************************************************************/
   -->
 
-<!--
-  ~ /***************************************************************************
-  ~ *  Author: Luis Octavio Goméz de la Cruz
-  ~ *  Date created: 18/01/23 14:43
-  ~ *  File: fragment_user.xml
-  ~ *  Last modified: 18/01/23 12:36
-  ~ *  Last change:
-  ~ *    Change Name ->
-  ~ *    Change Date -> 18/01/23 14:43
-  ~ *    Description ->
-  ~ *
-  ~ ****************************************************************************/
-  -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"

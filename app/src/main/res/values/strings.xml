@@ -13,7 +13,6 @@
   -->
 
 
-
 <resources>
     <string name="app_name">AutoAcuerdate</string>
     <!--    InfoAPP-->
@@ -27,125 +26,53 @@
     <string name="credential_menu">Credential</string>
     <string name="map_menu">Map</string>
     <string name="account_menu">Account</string>
+    <string name="locations_menu">Locations</string>
     <!--    Color plates-->
     <string name="color_plate_yellow">AMARILLO</string>
     <string name="color_plate_pink">ROSA</string>
     <string name="color_plate_red">ROJO</string>
     <string name="color_plate_blue">AZUL</string>
     <string name="color_plate_green">VERDE</string>
-    <string name="descripcion">El modelo es: %s
-        El color de la placa es: %s,
-        La placa es: %s y el origen es: $%s </string>
-    <string name="model">Modelo: %s</string>
+    <!--    Info-->
+    <string name="nacionality">Nacionality: %s</string>
+    <string name="model">Model: %s</string>
+    <string name="year">Year: %s</string>
+    <string name="left_pressure_tire">Tire pressure: %s</string>
+    <string name="right_pressure_tire">%s :Tire pressure</string>
+    <string name="mileage">Mileage: %s</string>
+    <!--    <string name="mileage">Mileage: %s</string>-->
+    <string name="email_send">A verification email has been sent to your email</string>
+    <string name="fail_email_send">Failed to send email</string>
+    <string name="reset_password">Reset password</string>
+    <string name="enter_reset_password">Enter your password to get link to restore</string>
+    <string name="send">send</string>
+    <string name="send_mail_reset">The link send to email for restore your password</string>
+    <string name="fail_send_mail_reset">Couldn\'t send email for restore your password</string>
+    <string name="warning_send_mail_reset">Please enter your email</string>
     <string name="failed">Failed</string>
-
-
-    <!-- <string name="prueba">Lapras está basado tanto en un plesiosaurio como en el monstruo del Lago Ness. Este Pokémon de tonalidad azulada posee pequeñas manchas de un tono más oscuro, además de que su vientre es color amarillo. En su cabeza tiene dos orejas enrolladas en forma de espiral, un pequeño cuerno en su frente y su hocico termina con un pico similar al de las tortugas. En su lomo tiene un gran caparazón gris con pinchos romos. Tiene cuatro aletas que le permiten nadar muy bien en el agua.
-
-Lapras es un Pokémon que vive en los mares. Le encanta surcar los mares con gente y Pokémon en su lomo, el cual resulta muy cómodo. De hecho, en la región de Alola ha terminado por convertirse en un medio de transporte muy popular. Posee una naturaleza tranquila y pacífica, lo que ha llevado a esta especie al borde de la extinción debido a su caza ilegal. Sin embargo, desde que está protegido, la población de Lapras ha ido en aumento, aunque esto ha ocasionado un descenso en los Pokémon pez en las zonas donde habita. Tiene un coeficiente intelectual tan alto que puede entender el lenguaje humano y es capaz de leer la mente. Está adaptado para nadar en aguas heladas y, dada su resistencia, puede soportar este clima. Debido a esto, su piel tersa es ligeramente fría al tacto.
-
-Al anochecer, es habitual escuchar sus tristes lamentos en los mares, se dice que llaman a otros de su propia especie que pudieran quedar en las cercanías, pero ahora que su población ha crecido, puede oírse a Lapras cantando bellas melodías cuando está de buen humor mientras surca los mares. En el anime es generalmente visto en pequeños grupos familiares.
-Este contenido proviene de wikidex.net, y debe darse atribución a sus autores, tal como especifica la licencia.
-Se prohíbe su uso a PlagioDex (el wiki de FANDOOM), por copiar reiteradamente sin dar atribución
-    Además, parece posible tratar de clasificar, muy en general, las teorías en dos grandes divisiones: la que ve la guerra como producto racional de ciertas condiciones, primariamente condiciones políticas (Carl von Clausewitz argumentó que la guerra es la continuación de la política por otros medios21​) y otra "irracionalista", que ve la guerra como producto de una tendencia, últimamente irracional, de los seres humanos.
-
-Las teorías irracionalistas pueden aproximarse desde dos puntos de vista:
-
-
-A raíz de la aparición de las armas nucleares se cambió el concepto de guerra: por primera vez se podía dar por resultado la aniquilación total de los dos bandos.
-1. Aquellas que ven el origen de la guerra en causas no atribuible a fundamento racional,22​ por ejemplo, sentimientos religiosos23​24​ o emociones.25​26​ El extremo lógico de esta visión —que el hombre es un animal inherentemente agresivo sujeto a tendencias tanto de competición como cooperación que se observan en animales sociales, situación que demanda la expresión ocasional de tales tendencias— se encuentra en algunas explicaciones ya sea biológicas, psicológicas27​ o de la psicología social del origen de conflictos (ver, por ejemplo: Experimento de Robber\'s Cave).
-
-2. La visión alternativa dentro de esta posición ve la guerra como originándose, en algunos casos, debido a equivocaciones o percepciones erróneas. Así, por ejemplo, Lindley y Schildkraut28​ argumentan, a partir de un análisis estadístico, que la cantidad de guerras que se podría aducir tuvieron un origen racional ha disminuido dramáticamente en tiempos recientes (Lindley y Schildkraut ofrecen como ejemplos de tales equivocaciones la Guerra de las Malvinas aunque se dice que la causa fue en verdad subir la popularidad de Margaret Thatcher de Inglaterra declarando ella la guerra ya que Argentina no había matado a nadie y ellos hundieron al Belgrano que estaba yendo al continente matando a la mitad de todos los Argentinos que murieron, y la Guerra de Irak) que otros aluden al deseo de petróleo, riquezas y dominio a la causa.
-
-La visión alternativa, de la guerra como actividad racional, se basa en dos percepciones. La original de von Clausewitz acerca de la guerra constituyendo la persecución de (objetivos de) la política por otros medios, y una percepción posterior (implícita en von Clausewitz) que indica que se recurriría a la guerra cuando se estima que las ganancias superan a las pérdidas potenciales (es decir, a través de un análisis de costo-beneficio). A su vez, se pueden distinguir dos posiciones:
-
-1. La teoría de la primacía de las políticas domésticas: se encuentra, por ejemplo, en las obras de Eckart Kehr y Hans-Ulrich Wehler (op. cit). Para esta posición, la guerra es el producto de condiciones domésticas. Así, por ejemplo, la Primera Guerra Mundial no fue producto de disputas internacionales, tratados secretos o consideraciones estratégicas, sino el resultado de condiciones sociopolíticas, incluyendo económicas, que, a pesar de ser comunes a varias sociedades, hacían sentir tensiones a cada una de ellas en forma interna, tensiones que solo se pudieron resolver a través de la guerra.
-
-2. La teoría de la primacía de la política internacional, que se encuentra, por ejemplo, en la concepción de Leopold von Ranke, de acuerdo a quien son las decisiones de estadistas motivados por consideraciones geopolíticas las que conducen a la guerra.
-
-Pedro Luis Lorenzo Cadarso sintetiza en tres grupos de teorías el origen de las guerras:29​
-
-Teoría psico-genética, que considera que la guerra es una forma de canalizar la agresividad humana, que existe bien por razones genéticas -instintivas, por tanto-, bien por determinada configuración psicológica de nuestro carácter. El evolucionista Richard Dawkins la vincula a lo que llama el gen egoísta.30​ Freud31​ y el psicoanálisis la vinculan con el complejo de Edipo, generador de la frustración-competencia que se halla en los orígenes de la agresividad y la competitividad. Anthony Storr considera que la agresividad humana puede ser controlada y encauzada, pero no suprimida y la especie humana es la más despiadada dentro del reino animal.32​
-Teoría socioeconómica o infraestructural, que vincula el recurso a la guerra a la existencia de desequilibrios entre población y recursos o bien a la competencia entre grupos por la posesión o ampliación de los recursos disponibles. Un exponente de estas teorías es el antropólogo Robert Ardrey.33​
-Teoría política. Los partidarios de esta teoría tienden a analizar la guerra sin apriorismos morales ni de otro tipo: la guerra existe porque en un hipotético balance de costes y beneficios resulta rentable políticamente. Es la teoría de Clausewitz; no es sino una estrategia más en el eterno enfrentamiento por el reparto del mundo entre las naciones y el reparto del poder y la riqueza entre los grupos sociales. Paradójicamente, la guerra es útil socialmente porque saber que puede estallar obliga a los hombres a ser más tolerantes y recurrir a la negociación y a la política para evitarla.34​
-Decepción estadística
-Este deseo de conocer las causas para poder predecir cuando estallará el próximo conflicto ha sido abordado en varias ocasiones. Uno de los investigadores del fenómeno bélico fue Lewis Fry Richardson. Este autor investigó todos los conflictos desde el siglo xix hasta la década de los 1950; considerando conflicto aquel enfrentamiento donde han muerto personas por causa intencionada de otra persona; de este modo juntaba los conflictos bélicos con las muertes por asesinato y homicidio, la mezcla fue intencionada por sus experiencias en la Segunda Guerra Mundial por las cuales pudo comprobar el efecto de muchas de las órdenes que vio dar y la suerte corrida por muchos soldados, enviados a la muerte a causa de esas órdenes.20​
-
-Richardson tuvo la idea de catalogar las guerras según el número de muertos de una forma similar a cómo se catalogan los terremotos: según su intensidad. Así, una guerra de magnitud 6 sería en la que morirían de 1 000 000 a 1 999 999 personas; pero por todas las dificultades que halló para saber el número de muertos en una contienda (llegó a decir que resultaba más fácil saber el número de estrellas de una galaxia o de neutrinos en el universo) Richardson aplicó un índice de error de 0,5 (más menos); con este índice de error una guerra de magnitud 3 sería aquella en la que perecieron entre 316 228 y 3 162 278.
-
-Aunque Richardson no fue el primero en recopilar conflictos bélicos su trabajo es uno de los más exhaustivos, pues comenzó en 1940 y siguió hasta el año de su muerte en 1953. Según sus estudios entre 1820 y 1950 hubo 315 conflictos de magnitud 2,5 o superior (al menos 300 muertos).
-
-Pese a reconocer que resulta muy difícil saber cuando comienza un conflicto y cuando termina, si es uno o varios al tiempo o el ya citado número de muertos; los resultados fueron decepcionantes en cierto modo:
-
-
-La frecuencia con la que estallan las guerras es muy similar a la de cualquier suceso aleatorio, lo que parece indicar que las guerras son imprevisibles.
-La frecuencia con la que estallan las confrontaciones sigue la distribución de Poisson, lo que parece indicar que las guerras son un suceso aleatorio. Así pues el autor concluyó que la principal causa de la guerra es la casualidad.
-
-En segundo lugar, colocó los conflictos cronológicamente y según su magnitud, para saber si algún tipo de conflicto se repetía o si un tipo de guerra iba en aumento o en detrimento respecto a las demás. Los resultados tampoco fueron concluyentes, volviendo a mostrar una distribución muy similar al suceso aleatorio. De esta forma la conclusión es que de las guerras no se aprende a evitarlas y que la probabilidad de que estalle un nuevo conflicto es la misma para cualquier día, no importa si antes ha sucedido otro ni el tamaño de este otro.
-
-Profundizando en su trabajo realizó un estudio de países vecinos que entraban en guerra. Midiendo las fronteras llegó a la conclusión de que un país linda con otras 6 naciones por término medio; por lo que la probabilidad de que una nación entrara en guerra con un vecino era casi del 10 %, si fuera un proceso aleatorio; sin embargo la estadística indicaba que la probabilidad era del 87,33 % (de 94 guerras estudiadas solo 12 no tenían frontera común). Por lo tanto, según el matemático, otra causa de la guerra es la vecindad.
-
-Richardson también relacionó las guerras con otros factores comúnmente indicados por los historiadores, como crisis económica o religión, llegando a otras tantas decepcionantes conclusiones:
-
-La carrera de armamento no tiene porqué desembocar en un conflicto armado: de 315 conflictos solo en 13 había una carrera de armamento preparatoria.35​
-Un idioma común no evita las guerras.
-Una crisis económica no tiene por qué desembocar en guerras civiles, ni tampoco entre estados.
-Solo pueblos de distintas religiones tienen más probabilidad de entablar guerras entre ellos. Así mismo, parece que los pueblos cristianos muestran más belicosidad que los de otros credos, al haber intervenido en una proporción mucho mayor de conflictos que el resto.
-No obstante Richardson concluyó que ni siquiera la religión es una causa de gran importancia.
-
-El siguiente en investigar en este ámbito es H. van Velzen y W. Wetering, quienes, en un análisis comparativo sobre residencia y conflicto, llegaban a la conclusión de que los grupos fraternos locales y la patrilinealidad constituyen las variables más significativas en relación con la frecuencia de la guerra. Algunos años más tarde, esta idea sería retomada por K.Otterbein, quien, en una nueva investigación transcultural, señalaría otra variable importante: la poliginia.
-
-En síntesis, Otterbein sostiene que las sociedades patrilocales y poligínicas y con grupos locales fraternos recurren más fácilmente a la violencia que las no patrilocales y poligínicas y sin dichos grupos.
-
-Es más, según este autor, las sociedades con mayor número de conflictos armados son aquellas que poseen comunidades políticas similares. Orrerbein denomina guerra interna al conflicto entre éstas, para distinguirlo del que se origina entre comunidades culturalmente distintas o guerra externa. Así, tomando como base su propia tabulación estadística resulta que, sobre una muestra de veintiocho sociedades patrilocales, un 71 % se caracteriza por guerra interna frecuente y un 19 % por guerra interna esporádica, mientras que en catorce sociedades no patrilocales, solo un 55 % presenta conflictos internos frecuentes.
-
-Concepto filosófico
-
-La Praefatio de Thomas Hobbes, De cive, donde la frase «Bellum omnium contra omnes / Guerra de todos contra todos» aparece por vez primera. Tomada de la edición revisada impresa en 1647 en Ámsterdam (apud L. Elzevirium).
-Para Maquiavelo y Thomas Hobbes está en la naturaleza humana el deseo y la ambición, lo que induce a la inseguridad colectiva y a la guerra de todos contra todos, y, por tanto, esa inseguridad es el fundamento de la ley y del Estado, que debe cuando menos reducirla.36​ Hobbes determina que las causas principales de la guerra entre los hombres son:
-
-La primera es la competencia; en segundo lugar, la desconfianza; y en tercer lugar, la gloria. La primera hace que los hombres invadan el terreno de otros para adquirir ganancia; la segunda, para lograr seguridad; y la tercera, para adquirir reputación. La primera hace uso de la violencia, para que así los hombres se hagan dueños de otros hombres, de sus esposas, de sus hijos y de su ganado. La segunda usa la violencia con un fin defensivo. Y la tercera, para reparar pequeñas ofensas, como una palabra, una sonrisa, una opinión diferente, o cualquier otra señal de desprecio dirigido hacia la propia persona o, indirectamente, a los parientes, a los amigos, a la patria, a la profesión o al prestigio personal.37​
-Se ha sugerido si, desde un punto de vista moral o filosófico, sería posible hablar de una guerra justa o lícita. Si ese es el caso, hay que distinguir:
-
-Si la guerra en general puede ser lícita.
-Si se cumplen o garantizan las condiciones requeridas.
-A primera vista parece posible proponer que la guerra no es necesariamente ilícita. Existe el derecho natural de autodefensa o de legítima defensa contra el enemigo exterior cuando ese ataca injustamente a un pueblo. Si se niega este derecho de legítima defensa, se robustece al agresor y se pone en peligro la paz de los pueblos. Sin embargo, se ha sugerido desde una perspectiva ética que, para que una guerra pueda tener una licitud ética, existen una serie de condicionantes adicionales:
-
-Que haya una injusticia real, verdadera y de gravedad.
-Inviabilidad de defenderse por vía pacífica.
-Perspectiva y esperanza de éxito final.
-Que se pueda evitar un perjuicio a terceros inocentes.
-La defensa del bien público prevalece sobre cualquier derecho del agresor e incluso sobre los riesgos que puedan tener los propios agredidos. Pero se considera ilícita la matanza injusta.
-
-Desde ese mismo punto de vista filosófico, se considera que el movimiento a favor de la paz se hace acreedor del más alto reconocimiento. Dicho movimiento es difusor de un espíritu de entendimiento y comprensión entre los pueblos. Su fin ético y moral es conseguir la paz y los acuerdos sin derramamiento de sangre.
-     La guerra, en un término estricto, es aquel conflicto social en el que dos o más grupos humanos relativamente masivos —principalmente tribus, sociedades o naciones— se enfrentan de manera violenta, generalmente mediante el uso de armas de toda índole, a menudo con resultado de muerte —individual o colectiva— y daños materiales de una entidad considerable.1​2​
-
-    La guerra es la forma de conflicto sociopolítico más grave entre dos o más grupos humanos. Se da tanto en sociedades tribales como en civilizadas, pero es más grave entre estas últimas porque son más complejas, masificadas y tecnificadas. Es quizás la más antigua de las relaciones internacionales y ya en el comienzo de las civilizaciones se constata el enfrentamiento organizado de grupos humanos armados con el propósito de controlar recursos naturales o humanos (conflictos entre cazadores nómadas y recolectores sedentarios que sí desarrollaron el concepto de "propiedad"),3​ exigir un desarme o imponer algún tipo de tributo, ideología o religión, sometiendo, despojando y, en su caso, destruyendo al enemigo, en lo que se podía llegar y se llegó frecuentemente al genocidio. Es más, este tipo de conducta gregaria es extensible a la mayor parte de los homínidos4​ y se encuentra estrechamente relacionado con el concepto etológico de territorialidad.
-
-    Las guerras tienen como origen múltiples causas, entre las que suelen estar el mantenimiento o el cambio de relaciones de poder, dirimir disputas económicas, ideológicas, territoriales, etc. En Ciencia Política y Relaciones Internacionales, la guerra es un instrumento político, al servicio de un Estado u otra organización con fines eminentemente políticos, ya que en caso contrario constituiría una forma más desorganizada aunque igualmente violenta: el bandolerismo por tierra o la piratería por mar. En las sociedades primitivas tribales su origen aparece más claro: deriva de dos elementos: presión demográfica y escasez de recursos.
-
-    Según Richard Holmes, la guerra es una experiencia universal que comparten todos los países y todas las culturas.5​ Según Sun Tzu, «La guerra es el mayor conflicto de Estado, la base de la vida y la muerte, el Tao de la supervivencia y la extinción. Por lo tanto, es imperativo estudiarla profundamente».6​ Por demás, la forma más astuta de ejercerla sería soslayarla de manera que no hubiera necesidad de llegar a ella. Según Karl von Clausewitz, la guerra es «la continuación de la política por otros medios».7​
-
-    Las reglas de la guerra, y la existencia misma de reglas, han variado mucho a lo largo de la historia. El concepto de quiénes son los combatientes también varía con el grado de organización de las sociedades enfrentadas. Las dos posibilidades más frecuentes son civiles sacados de la población general, generalmente varones jóvenes, en caso de conflicto, o soldados profesionales formando ejércitos permanentes. También puede haber voluntarios y mercenarios. Las combinaciones de varios o de todos estos tipos de militares son asimismo frecuentes. Las formas de hacer una guerra dependen de los propósitos de los combatientes. Por ejemplo, en las guerras romanas, cuyo objetivo era expandir el imperio, el objetivo militar principal era, una vez sometido, incorporar al pueblo ajeno al imperio y a las leyes y costumbres de Roma.8​En la actualidad, a veces se hace distinción entre conflictos armados y guerras. De acuerdo con este punto de vista, un conflicto solo sería una guerra si los beligerantes han hecho una declaración formal de la misma. En una concepción de la doctrina militar de Estados Unidos no se hace distinción alguna, refiriéndose a los conflictos armados como guerras de cuarta generación.
-
-
-    Batalla de Normandía.
-    Entre el final de la Segunda Guerra Mundial y el año 2010 hubo 246 enfrentamientos armados en 151 lugares del mundo.Platón no habla de guerreros, sino de "guardianes" de la polis, y distingue además entre la discordia (que se da entre los griegos) y la guerra (que se da entre griegos y bárbaros).9​ Aristóteles afirmó que la guerra solo sería un medio en vista de la paz, como lo es el trabajo en vista del ocio y la acción en vista del pensamiento,10​ pues considera que la guerra es tan natural en la sociedad humana como la paz, ya que también es legítima la esclavitud en la naturaleza para mantener la jerarquía de lo mejor sobre lo peor, el orden social:
-
-    El ejercicio de la guerra no debe perseguirse con el fin de esclavizar a los que no lo merecen, sino, en primer lugar, para no ser esclavizados por otros; en segundo lugar, para procurar la hegemonía por el bien de los gobernados, no por deseo de dominar a todos; y en tercer lugar, para enseñorearse de los que merecen la esclavitud.11​
-    La guerra, afirma el Marqués de Olivart, es el litigio entre las naciones que defienden sus derechos, en el cual es el juez la fuerza y sirve de sentencia la victoria. Hugo Grocio la definió como status per vincertatium qua tales sunt. Por su parte, Alberico Gentilis afirmó que Bellum est armorum publicorum ensta contentio.12​ Funk - Bretano y Alberto Sorel escribieron: "La guerra es un acto político por el cual varios Estados, no pudiendo conciliar lo que creen son sus deberes, sus derechos o sus intereses, recurren a la fuerza armada para que esta decida cuál de entre ellos, siendo más fuerte, podrá en razón de la fuerza, imponer su voluntad a los demás.13​".
-
-    Joseph de Maistre (1821) dijo, en sus Soirees de Saint Petesburg: "La guerra es divina en la gloria misteriosa que le rodea y en el atractivo no menos explicable que nos lleva hacia ella. La guerra es divina por la manera como se produce independientemente de la voluntad de los que luchan. La guerra es divina en sus resultados que escapan absolutamente a la razón".14​
-
-    G.W.F Hegel escribió: "la guerra es bella, buena, santa y fecunda; crea la moralidad de los pueblos y es indispensable para el mantenimiento de su salud moral. Es en la guerra donde el Estado se acerca más a su ideal porque es entonces cuando la vida y los bienes de los ciudadanos están más estrechamente subordinados a la conservación de la entidad común13​".
-
-    El instituto de investigación de la paz internacional de Suecia, define la guerra como todo aquel conflicto armado que cumple dos requisitos:15​ enfrentar al menos una fuerza militar, ya sea contra otro u otros ejércitos o contra una fuerza insurgente y haber muerto diez mil o más personas.
-
-    Johan Huizinga establece que la guerra obtiene un carácter lúdico cuando se cumple con la condición agonal; el elemento agonal empieza a actuar en el momento en el que los adversarios se consideran enemigos que luchan por una cosa a la que pretenden tener derecho.16​
-
-    Los fines del derecho son la paz y la justicia, vocablos polisémicos; la paz incluye la seguridad;17​ por eso la guerra supone la suspensión del derecho. El jurista Rudolf von Ihering en su Der Kampf ums Recht o La lucha por el Derecho (1872) sostuvo que la fuerza es la base del derecho y que el derecho sin la fuerza es una utopía.18​ Pero el derecho es la lucha contra la injusticia:
-
-    Todo derecho en el mundo debió ser adquirido por la lucha; esos principios de derecho q ue están hoy en vigor ha sido indispensable imponerlos por la lucha a los que no lo aceptaban, por lo que todo derecho, tanto el derecho de un pueblo, como el de un individuo, supone que están el individuo y el pueblo dispuestos a defenderlo. El derecho no es una idea lógica, sino una idea fuerza; he ahí porque la justicia, que sostiene en una mano la balanza donde pesa el derecho, sostiene en la otra la espada que sirve para hacerle efectivo. La espada, sin la balanza, es la fuerza bruta, y la balanza sin la espada, es el derecho en su impotencia; se completan recíprocamente: y el derecho no reina verdaderamente, más que en el caso en que la fuerza desplegada por la justicia para sostener la espada, iguale a la habilidad que emplea en manejar la balanza.19​</string>-->
-
+    <string name="request_permission_title">Permiso requerido</string>
+    <string name="request_permission_msg">Se necesita acceder a la ubicación para esta funcionalidad</string>
+    <string name="request_permission_ok">De acuerdo</string>
+    <string name="request_permission_cancel">Cancelar</string>
+    <string name="request_permission_reject">El permiso a la localización se ha negado (Ir a configuraciones si desea modificar)</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="error_invalid_email">Error: Invalid Format for the email</string>
+    <string name="error_wrong_password">Error: Invalid password</string>
+    <string name="error_account_exists_with_diff_credentials">Error: the account is exist with same email but diference data to log in</string>
+    <string name="error_email_already_in_use">Error: the email this is in use with another account</string>
+    <string name="error_user_token_expired">Error: Expired session, please log in again</string>
+    <string name="error_user_not_found">Error: User not found</string>
+    <string name="error_weak_password">Error: The password need more elements, min. 6 characteres</string>
+    <string name="not_network">Error: Network not enable or interrumpter</string>
+    <string name="error_unknown">Error: What did you do?</string>
+
 </resources>

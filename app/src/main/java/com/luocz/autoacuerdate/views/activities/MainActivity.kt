@@ -28,6 +28,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.luocz.autoacuerdate.R
 import com.luocz.autoacuerdate.databinding.ActivityMainBinding
 import com.luocz.autoacuerdate.models.Car
+import com.luocz.autoacuerdate.models.Location
 import com.luocz.autoacuerdate.views.fragments.CarListFragment
 
 class MainActivity : AppCompatActivity() {
@@ -39,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 //        binding.navView.background = null
 
 
@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.carListFragment,
                 R.id.credentialsListFragment,
                 R.id.mapFragment,
+                R.id.locationFragment,
                 R.id.userFragment
             )
         )
@@ -70,9 +71,11 @@ class MainActivity : AppCompatActivity() {
             putString("ID_CAR",carItem.id_car)
         }
         navController.navigate(R.id.carDetailFragment, parametros)
-
-
-
-
+    }
+    fun selectedLocation(locationItem: Location) {
+        val parametros = Bundle().apply {
+            putString("ID_LOCATION",locationItem.id_location)
+        }
+        navController.navigate(R.id.locationDetailFragment, parametros)
     }
 }

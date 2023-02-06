@@ -12,19 +12,7 @@
  * **************************************************************************
  */
 
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 22/01/23 12:10
- *   File: Car.kt
- *   Last modified: 22/01/23 12:07
- *   Last change:
- *     Change Name ->
- *     Change Date -> 22/01/23 12:10
- *     Description ->
- *
- * **************************************************************************
- */
+
 
 
 package com.luocz.autoacuerdate.models
@@ -66,5 +54,13 @@ data class Car(
     @SerializedName("origin")
     val origin: String? = null,
     @SerializedName("image")
-    val image: String? = null
+    val image: String? = null,
+    @SerializedName("left_pressure_tire_front")
+    val left_pressure_tire_front: String? = null,
+    @SerializedName("right_pressure_tire_front")
+    val right_pressure_tire_front: String? = null,
+    @SerializedName("left_pressure_tire_behavior")
+    val left_pressure_tire_behavior: String? = null,
+    @SerializedName("right_pressure_tire_behavior")
+    val right_pressure_tire_behavior: String? = null
 )

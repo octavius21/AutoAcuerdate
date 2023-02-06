@@ -35,11 +35,26 @@
     <color name="background_color_app_theme_black">#1a1c1e</color>
     <color name="outline_color_app_theme_black">#8b9198</color>
 <!--    Color Plates-->
+    <color name="color_plate">#92F4F4F3</color>
     <color name="color_plate_yellow">#F6B216</color>
     <color name="color_plate_pink">#E925FF</color>
     <color name="color_plate_red">#EC102A</color>
     <color name="color_plate_blue">#093BED</color>
     <color name="color_plate_green">#218006</color>
+<!--    Color Tire-->
+    <color name="color_tire">#AB050505</color>
+<!--    Pruebas para el color del splash-->
+<!--    NO-->
+<!--    <color name="color0">@drawable/splash_screen_app_theme_white</color>-->
+<!--    NO-->
+    <color name="color1"
+        src="@drawable/splash_screen2_app_theme_white"/>
+<!--    NO-->
+    <color name="color2"
+        src="@drawable/splash_screen_app_theme_white"/>
+<!--    NO-->
+    <color name="colo3"
+        color="@drawable/splash_screen_app_theme_white"/>
 
 
 </resources>

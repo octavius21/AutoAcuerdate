@@ -14,6 +14,7 @@
 
 package com.luocz.autoacuerdate.views.fragments
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -21,6 +22,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.content.res.AppCompatResources
+import androidx.appcompat.content.res.AppCompatResources.getDrawable
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -56,18 +60,46 @@ private lateinit var  binding: FragmentCarDetailBinding
                 Log.d(Constants.LOGTAG_INFO, "Respuesta del servidor:${response.toString()}")
                 Log.d(Constants.LOGTAG_INFO, "Datos:${response.body().toString()}")
                 val car: Car? = response.body()
-                val model= requireActivity().getString(R.string.model,car?.brand.toString())
-                val description = requireActivity().getString(R.string.descripcion,
-                    response.body()?.model.toString(),
-                    response.body()?.color_plate.toString(),
-                    response.body()?.license_plate.toString(),
-                    response.body()?.origin.toString())
+
                 Glide.with(this@CarDetailFragment)
                     .load(response.body()?.image)
                     .into(binding.ivImage)
+
+                /*val description = requireActivity().getString(R.string.descripcion,
+                    response.body()?.model.toString(),
+                    response.body()?.color_plate.toString(),
+                    response.body()?.license_plate.toString(),
+                    response.body()?.origin.toString())*/
+
+
+
                 binding.apply {
-                    tvBrand.text = model
-                    tvLongDesc.text = description
+                    tvBrand.text = requireActivity().getString(R.string.model,car?.brand.toString())
+                    tvNationalityCarDetail.text = requireActivity().getString(R.string.nacionality, car?.origin)
+                    tvYear.text = requireActivity().getString(R.string.year,car?.model.toString())
+                    Glide.with(requireContext())
+                        .load(SelectedColor(car?.color_plate.toString().uppercase()))
+                        .centerCrop()
+                        .fitCenter()
+                        .into(binding.ivColorPlateCarDetail)
+                    tvLicensePlateCarDetail.text = response.body()?.license_plate.toString()
+//                  TODO: Falta implementarlo en el API y la propiedad faltante
+                    tvLeftTireFront.text = requireActivity().getString(R.string.left_pressure_tire,response.body()?.left_pressure_tire_front.toString())
+                    tvRightTireFront.text = requireActivity().getString(R.string.left_pressure_tire,response.body()?.right_pressure_tire_front.toString())
+                    tvLeftTireBehavior.text = requireActivity().getString(R.string.left_pressure_tire,response.body()?.left_pressure_tire_behavior.toString())
+                    tvRightTireBehavior.text = requireActivity().getString(R.string.left_pressure_tire,response.body()?.right_pressure_tire_behavior.toString())
+//                    tvMileageCarDetail.text = requireActivity().getString(R.string.left_pressure_tire,response.body()?.mileage.toString())
+                    /*tvLeftTireFront.text = requireActivity().getString(R.string.left_pressure_tire,"10PA")
+                    tvRightTireFront.text = requireActivity().getString(R.string.left_pressure_tire,"10PA")
+                    tvLeftTireBehavior.text = requireActivity().getString(R.string.left_pressure_tire,"10PA")
+                    tvRightTireBehavior.text = requireActivity().getString(R.string.left_pressure_tire,"10PA")
+                    tvMileageCarDetail.text = requireActivity().getString(R.string.mileage,"118000 KM")*/
+                    tv.text = "proipiedad faltante"
+                    ivtireLF.visibility = View.VISIBLE
+                    ivtireRF.visibility = View.VISIBLE
+                    ivtireLB.visibility = View.VISIBLE
+                    ivtireRB.visibility = View.VISIBLE
+
                     pbConexion.visibility = View.INVISIBLE
                     pbConexion.isEnabled = false
                 }
@@ -79,6 +111,16 @@ private lateinit var  binding: FragmentCarDetailBinding
             }
 
         })
+    }
+    private fun SelectedColor(color: String): Drawable?{
+        return when(color){
+            requireContext().getString(R.string.color_plate_blue) -> getDrawable(requireContext(),R.color.color_plate_blue)
+            requireContext().getString(R.string.color_plate_red) -> getDrawable(requireContext(),R.color.color_plate_red)
+            requireContext().getString(R.string.color_plate_yellow) -> getDrawable(requireContext(),R.color.color_plate_yellow)
+            requireContext().getString(R.string.color_plate_green) -> getDrawable(requireContext(),R.color.color_plate_green)
+            requireContext().getString(R.string.color_plate_pink) -> getDrawable(requireContext(),R.color.color_plate_pink)
+            else -> getDrawable(requireContext(),R.color.white)
+        }
     }
 
 }

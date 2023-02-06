@@ -14,31 +14,39 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="@drawable/custom_selector_choice_ripple"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
+<!--TODO REALIZAR MEJRO DISEÑO DE ITEM BACK-->
+<!--    android:background="@drawable/splash_screen_app_theme_white"-->
+<!--    Tambien la view no me respeta el ultimo guide me lo corta antes-->
+<!--    o el caso de que nunca se detenga-->
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/outline_color_app_theme_black"
-        android:padding="5dp"
-        android:paddingBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/second_color_app_theme_white"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"/>
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/ivCar"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_margin="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/guideline5"
         app:layout_constraintEnd_toEndOf="@id/guideline6"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toTopOf="@id/guideline4"
-        app:riv_corner_radius="10dp" />
+        app:riv_corner_radius="10dp"
+        tools:src="@drawable/ic_launcher_foreground"/>
 
     <TextView
         android:id="@+id/tvBrand"
@@ -48,7 +56,7 @@
         android:layout_marginEnd="8dp"
         android:includeFontPadding="false"
         android:paddingTop="8dp"
-        android:textColor="#CBD5ED"
+        style="@style/textcolorH4"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline6"
@@ -61,8 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:textColor="#CBD5ED"
-        android:textSize="10sp"
+        style="@style/textcolorOverline"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline6"
         app:layout_constraintTop_toBottomOf="@id/tvBrand"
@@ -70,25 +78,25 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/ivColorPlate"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
         android:scaleType="fitXY"
-        app:riv_corner_radius="20dp"
+        app:riv_corner_radius="30dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toStartOf="@id/tvLicensePlate"
         app:layout_constraintStart_toStartOf="@id/guideline6"
         app:layout_constraintTop_toBottomOf="@id/tvModel"
-        tools:src="@color/purple_500"/>
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        tools:src="@color/color_plate_yellow"/>
 
     <TextView
         android:id="@+id/tvLicensePlate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="5dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="2dp"
-        android:textColor="#CBD5ED"
+        android:layout_marginTop="4dp"
+        style="@style/textcolorSubtitle"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toEndOf="@id/ivColorPlate"
@@ -100,21 +108,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.02" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
+        app:layout_constraintGuide_percent="0.98" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"

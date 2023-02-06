@@ -12,48 +12,6 @@
  * **************************************************************************
  */
 
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 22/01/23 12:10
- *   File: CarListFragment.kt
- *   Last modified: 18/01/23 12:36
- *   Last change:
- *     Change Name ->
- *     Change Date -> 22/01/23 12:10
- *     Description ->
- *
- * **************************************************************************
- */
-
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 18/01/23 12:35
- *   File: CarListFragment.kt
- *   Last modified: 18/01/23 12:34
- *   Last change:
- *     Change Name ->
- *     Change Date -> 18/01/23 12:35
- *     Description ->
- *
- * **************************************************************************
- */
-
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 18/01/23 12:34
- *   File: CarListFragment.kt
- *   Last modified: 18/01/23 12:34
- *   Last change:
- *     Change Name ->
- *     Change Date -> 18/01/23 12:34
- *     Description ->
- *
- * **************************************************************************
- */
-
 package com.luocz.autoacuerdate.views.fragments
 
 import android.os.Bundle
@@ -83,6 +41,7 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
         binding.fabCars.setOnClickListener {
             Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
         }
+        binding.pbConexion.visibility = View.VISIBLE
         val call = RetrofitServices.getRetrofit().create(CarApi::class.java)
             .getCars("cars")
         call.enqueue(object : Callback<CarX>{
@@ -92,9 +51,9 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
             ) {
                 Log.d(Constants.LOGTAG_INFO, "Respuesta del servidor:${response.toString()}")
                 Log.d(Constants.LOGTAG_INFO, "Datos:${response.body().toString()}")
-                binding.rvCars.layoutManager = LinearLayoutManager(requireContext(),RecyclerView.VERTICAL, false)
-                binding.rvCars.adapter = CarAdapter(requireContext(),response.body()!!)
-
+                binding.rvCars.layoutManager = LinearLayoutManager(binding.root.context,RecyclerView.VERTICAL, false)
+                binding.rvCars.adapter = CarAdapter(binding.root.context,response.body()!!)
+                binding.pbConexion.visibility = View.INVISIBLE
             }
 
             override fun onFailure(call: Call<CarX>, t: Throwable) {
@@ -102,7 +61,10 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
             }
 
         })
+    }
 
+    override fun onResume() {
+        super.onResume()
 
     }
 }

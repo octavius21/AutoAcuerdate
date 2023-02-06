@@ -42,9 +42,10 @@
         android:icon="@drawable/ic_baseline_map_24"
         android:title="@string/map_menu" />
 
-    <!--<item
-        android:id="@+id/navigation_pending"
-        android:title="Pending" />-->
+    <item
+        android:id="@+id/locationFragment"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="@string/locations_menu" />
 
     <item
         android:id="@+id/userFragment"

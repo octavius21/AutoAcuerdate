@@ -46,11 +46,20 @@
     <fragment
         android:id="@+id/carDetailFragment"
         android:name="com.luocz.autoacuerdate.views.fragments.CarDetailFragment"
-        android:label="fragment_car_detail"
+        android:label="Car Detail"
         tools:layout="@layout/fragment_car_detail" />
-    <activity
-        android:id="@+id/splashActivity"
-        android:name="com.luocz.autoacuerdate.views.activities.SplashActivity"
-        android:label="activity_splash"
-        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.LocationListFragment"
+        android:label="Locations"
+        tools:layout="@layout/fragment_location_list" >
+        <action
+            android:id="@+id/action_locationFragment_to_locationDetailFragment"
+            app:destination="@id/locationDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationDetailFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.LocationDetailFragment"
+        android:label="Location Detail"
+        tools:layout="@layout/fragment_location_detail" />
 </navigation>

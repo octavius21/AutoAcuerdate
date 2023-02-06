@@ -15,10 +15,7 @@
 package com.luocz.autoacuerdate.models
 
 import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Path
-import retrofit2.http.Query
-import retrofit2.http.Url
+import retrofit2.http.*
 
 interface CarApi {
     @GET
@@ -30,6 +27,30 @@ interface CarApi {
     fun getCarDetail(
         @Query("id_car") id_car: String?,
     ):Call<Car>
+
+    @GET
+    fun getCards(
+        @Url url: String?
+    ):Call<CirculationCard>
+
+    @GET
+    fun getCardDetail(
+        @Query("id_card") id_car: String?,
+    ):Call<CirculationCardX>
+
+    @GET
+    fun getLocations(
+        @Url url: String?
+    ):Call<LocationX>
+    @GET("locations")
+    fun getLocationDetail(
+        @Query("id_location") id_location: String?,
+    ):Call<Location>
+    /*@POST
+    fun postLocation(
+        @Body()
+    ):Call<Location>*/
+
 
     /*@GET("/cars/{id_car}")
     fun getCar(

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 28/01/23 19:28
+  ~ *  File: themes.xml
+  ~ *  Last modified: 28/01/23 19:28
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 28/01/23 19:28
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!--        Me limita a un color-->
+        <item name="windowSplashScreenBackground">@color/color_plate_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!--        No funciona(era para poner abajo una etiqueta)-->
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_launcher_foreground</item>
+        <!--        No funciona ya que esta atras del icino a no ser que nosea un icono adaptativo-->
+        <item name="windowSplashScreenIconBackgroundColor">@color/color_plate_red</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!--        Para realizar el siguiente tema-->
+        <item name="postSplashScreenTheme">@style/Theme.AutoAcuerdate</item>
+    </style>
+</resources>

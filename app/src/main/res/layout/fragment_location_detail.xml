@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 06/02/23 17:12
+  ~ *  File: fragment_location_detail.xml
+  ~ *  Last modified: 06/02/23 11:38
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 06/02/23 17:12
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color_app_theme_black"
+    tools:context=".views.fragments.LocationDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvLocationName"
+                style="@style/textcolorH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:textSize="30sp"
+                tools:text="PLACE" />
+<!--TODO: implementar un mini mapa dando la ubicacion del amrcador-->
+<!--            <fragment-->
+<!--                android:id="@+id/mapDetail"-->
+<!--                android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                tools:context=".views.fragments.fragment_location_detail"/>-->
+            <TextView
+                android:id="@+id/tvCoordinatesLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textcolorBody"
+                tools:text="Coordinates latitude: 10.15641681"/>
+            <TextView
+                android:id="@+id/tvCoordinatesLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textcolorBody"
+                tools:text="Coordinates longitude: -99.454641641"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

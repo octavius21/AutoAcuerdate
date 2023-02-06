@@ -12,33 +12,7 @@
  * **************************************************************************
  */
 
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 22/01/23 12:10
- *   File: CredentialsListFragment.kt
- *   Last modified: 18/01/23 12:36
- *   Last change:
- *     Change Name ->
- *     Change Date -> 22/01/23 12:10
- *     Description ->
- *
- * **************************************************************************
- */
 
-/*
- * **************************************************************************
- *   Author: Luis Octavio Goméz de la Cruz
- *   Date created: 18/01/23 12:36
- *   File: CredentialsListFragment.kt
- *   Last modified: 18/01/23 12:36
- *   Last change:
- *     Change Name ->
- *     Change Date -> 18/01/23 12:36
- *     Description ->
- *
- * **************************************************************************
- */
 
 package com.luocz.autoacuerdate.views.fragments
 

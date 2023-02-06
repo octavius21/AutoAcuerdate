@@ -17,10 +17,24 @@ package com.luocz.autoacuerdate.models
 
 import java.util.*
 
-data class CirculationCard(
+/*data class CirculationCard(
     val name: String,
     val itin: String?,
     val exp_date: Date?,
     val efe_date: Date?
 
+)*/
+data class CirculationCard(
+    val circulation_cards: List<CirculationCardX>?
 )
+
+data class CirculationCardX(
+    val efe_date: String?,
+    val exp_date: String?,
+    val id_card: String?,
+    val itin: String?,
+    val name: String?,
+    val orgin: String?
+)
+
+
