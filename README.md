@@ -39,7 +39,8 @@ _Aqui Activar o Desactivar el Ingreso por huella digital para un acceso mas rapi
 
 ### Credenciales de Acceso
 User: cuq1@live.com.mx
-pwd: 123456
+
+Pwd: 123456
 
 ### Frameworks/Dependecias/Packages
 
