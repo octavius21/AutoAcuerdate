@@ -74,7 +74,7 @@ _Puedes encontrar mucho más información al respecto en:_
 
 ## Autores ✒️
 
-* **Luis Gomez** - *Trabajo Final* - [Ing. Luis Octavio](https://github.com/octavius21)
+* **Luis Gomez** - *Trabajo Final* - [ Luis Octavio](https://github.com/octavius21)
 
 
 ### Preview 
@@ -86,7 +86,6 @@ _Puedes encontrar mucho más información al respecto en:_
 <img src="/5.jpg" align="left" width="150">
 <img src="/6.jpg" align="left" width="150">
 <img src="/7.jpg" align="left" width="150">
-<img src="/8.jpg" align="left" width="150">
 
 
 <!--
