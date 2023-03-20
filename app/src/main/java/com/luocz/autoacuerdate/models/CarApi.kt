@@ -31,12 +31,12 @@ interface CarApi {
     @GET
     fun getCards(
         @Url url: String?
-    ):Call<CirculationCard>
+    ):Call<CirculationCardX>
 
     @GET
     fun getCardDetail(
         @Query("id_card") id_car: String?,
-    ):Call<CirculationCardX>
+    ):Call<CirculationCard>
 
     @GET
     fun getLocations(

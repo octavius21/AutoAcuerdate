@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 18/03/23 17:52
+  ~ *  File: themes.xml
+  ~ *  Last modified: 18/03/23 17:52
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 18/03/23 17:52
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<resources>
+
+    <style name="containersCar">
+        <item name="android:background">@color/md_theme_dark_primaryContainer</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:outlineSpotShadowColor">@color/md_theme_dark_shadow</item>
+        <item name="android:outlineProvider">background</item>
+    </style>
+
+    <style name="containersImage">
+        <item name="android:elevation">5dp</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:outlineAmbientShadowColor">@color/md_theme_dark_shadow</item>
+        <item name="android:outlineSpotShadowColor">@color/md_theme_dark_shadow</item>
+    </style>
+
+    <style name="floatingActionButton" patern="Widget.Design.FloatingActionButton">
+        <item name="elevation">3dp</item>
+        <item name="rippleColor">@color/md_theme_dark_surfaceTint</item>
+        <item name="hoveredFocusedTranslationZ">1dp</item>
+        <item name="android:backgroundTint">@color/md_theme_dark_primaryContainer</item>
+        <item name="tint">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:outlineSpotShadowColor">@color/md_theme_dark_shadow</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+</resources>

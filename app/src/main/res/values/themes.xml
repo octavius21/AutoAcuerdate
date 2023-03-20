@@ -13,77 +13,231 @@
   -->
 
 
-
-
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.AutoAcuerdate" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
+        <item name="colorCustomColor1">#006688</item>
+        <item name="colorOnCustomColor1">#ffffff</item>
+        <item name="colorCustomColor1Container">#c2e8ff</item>
+        <item name="colorOnCustomColor1Container">#001e2c</item>
+        <item name="harmonizeCustomColor1">true</item>
+        <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="BottomAppBarStyle" parent="Widget.MaterialComponents.BottomAppBar.Colored">
-        <item name="background">?attr/colorPrimary</item>
+        <!--        <item name="background">?attr/colorPrimary</item>-->
+        <!--        <item name="backgroundTint">@color/md_theme_light_surface</item>-->
+        <item name="elevation">3dp</item>
+        <!--        <item name="navigationIconTint">@color/md_theme_light_surfaceTint</item>-->
     </style>
-
+    <!--Color de la barra de BottomNavigation-->
     <style name="BottomNavigationStyle">
         <item name="android:background">@drawable/gradient_bottom_nav_theme_white</item>
         <item name="itemIconTint">@color/nv_tab_item_foreground_theme_white</item>
         <item name="itemTextColor">@color/nv_tab_item_foreground_theme_white</item>
     </style>
+    <!--    Containers-->
+    <!--    Container Cars-->
+    <style name="containersCar">
+        <item name="android:background">@color/md_theme_light_primaryContainer</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:outlineProvider">background</item>
+    </style>
+    <style name="containerTextInputCarAdd" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/md_theme_light_outline</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeErrorColor">@color/md_theme_light_error</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="startIconTint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:hint">Enter Your plate</item>
+        <item name="android:textColorHint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="hintTextColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="endIconTint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="errorIconTint">@color/md_theme_light_error</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperText">Enter Your plate</item>
+        <item name="helperTextTextColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">@color/md_theme_light_error</item>
+    </style>
+    <!--        Container Cards-->
+    <style name="containersCard">
+        <item name="android:background">@color/md_theme_light_secondaryContainer</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:state_pressed">true</item>
+        <item name="elevation">1dp</item>
+        <item name="rippleColor">@color/md_theme_light_surfaceTint</item>
+        <item name="borderWidth">1dp</item>
+        <item name="backgroundTint">@color/md_theme_light_surfaceTint</item>
+        <item name="cardCornerRadius">30dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="strokeColor">@color/md_theme_light_outline</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="TextCardItem">
+        <item name="android:textColor">@color/md_theme_light_onSecondaryContainer</item>
+    </style>
+
+    <style name="ButtonCardItem">
+        <item name="android:backgroundTint">@color/md_theme_light_primaryContainer</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="elevation">3dp</item>
+        <item name="rippleColor">@color/md_theme_light_surfaceTint</item>
+        <item name="hoveredFocusedTranslationZ">1dp</item>
+    </style>
+    <!--    Container Image-->
+    <style name="containersImage">
+        <item name="android:elevation">5dp</item>
+        <item name="android:outlineProvider">background</item>
+    </style>
+    <!--    Container Icons-->
+    <style name="floatingActionButton" patern="Widget.Design.FloatingActionButton">
+        <item name="elevation">3dp</item>
+        <item name="rippleColor">@color/md_theme_light_surfaceTint</item>
+        <item name="hoveredFocusedTranslationZ">1dp</item>
+        <item name="android:backgroundTint">@color/md_theme_light_primaryContainer</item>
+        <item name="tint">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+
+    <style name="containerTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/md_theme_light_outline</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeErrorColor">@color/md_theme_light_error</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="startIconTint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:hint">@string/prompt_email</item>
+        <item name="android:textColorHint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="hintTextColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="endIconTint">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="errorIconTint">@color/md_theme_light_error</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperText">@string/warning_send_mail_reset</item>
+        <item name="helperTextTextColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">@color/md_theme_light_error</item>
+    </style>
+    <!--    BackGrounds-->
+    <!--    Backgrounds Car-->
+    <style name="background">
+        <item name="android:background">@color/md_theme_light_background</item>
+    </style>
+    <!--    Color Button Login-->
+    <style name="colorBottonLogin">
+        <item name="android:backgroundTint">@color/md_theme_light_primary</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--    Color Button Login-->
+    <style name="colorBottonRegister">
+        <item name="android:backgroundTint">@color/md_theme_light_secondary</item>
+        <item name="android:textColor">@color/md_theme_light_onSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--    Color Button Forget-->
+    <style name="colorBottonForget">
+        <item name="android:textColor">@color/md_theme_light_onErrorContainer</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--     ripple-->
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/md_theme_light_surfaceTint</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <!--    Color FingerPrint-->
+    <style name="FingerPrint">
+        <item name="android:tint">@color/md_theme_light_primary</item>
+    </style>
+
+    <!--    Recursos de los colores y tamaños para cuando el tema es blanco-->
     <style name="textcolorH1">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">96sp</item>
     </style>
+
     <style name="textcolorH2">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">60sp</item>
     </style>
+
     <style name="textcolorH3">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">48sp</item>
     </style>
+
     <style name="textcolorH4">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">34sp</item>
     </style>
+
     <style name="textcolorH5">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">24sp</item>
     </style>
+
     <style name="textcolorH6">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="textcolorSubtitle">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">16sp</item>
     </style>
+
     <style name="textcolorBody">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:textSize">16sp</item>
     </style>
+
     <style name="textButton">
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="textcolorOverline">
-        <item name="android:textColor">@color/text_color_theme_white</item>
+        <item name="android:textColor">@color/md_theme_light_onErrorContainer</item>
         <item name="android:textSize">10sp</item>
     </style>
-
+    <!--SPLASH-->
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/color_plate_blue</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="windowSplashScreenIconBackgroundColor">@color/color_plate_red</item>
+        <item name="windowSplashScreenBackground">@color/color_background_splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_new_logo_app_foreground</item>
         <item name="windowSplashScreenAnimationDuration">1000</item>
         <item name="postSplashScreenTheme">@style/Theme.AutoAcuerdate</item>
     </style>

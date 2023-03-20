@@ -12,8 +12,13 @@
   ~ ****************************************************************************/
   -->
 
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/md_theme_light_onPrimaryContainer" android:state_checked="true"/>
+    <item android:color="@color/md_theme_light_primaryContainer"/>
+
+</selector>-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/primary_color_app_theme_white" android:state_checked="true"/>
-    <item android:color="@color/white"/>
+    <item android:color="@color/md_theme_light_surfaceTint" android:state_checked="true"/>
+    <item android:color="@color/md_theme_light_surface"/>
 
 </selector>

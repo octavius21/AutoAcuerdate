@@ -23,19 +23,24 @@ import androidx.recyclerview.widget.RecyclerView
 import com.luocz.autoacuerdate.views.holders.CirculationCardViewHolder
 import com.luocz.autoacuerdate.models.CirculationCard
 import com.luocz.autoacuerdate.databinding.CirculationCardItemBinding
-class CirculationCredentialAdapter (private val context: Context, private val circulationCards: ArrayList<CirculationCard>):
-    RecyclerView.Adapter<CirculationCardViewHolder>() {
+import com.luocz.autoacuerdate.models.CirculationCardX
+import com.luocz.autoacuerdate.views.activities.MainActivity
 
+class CirculationCredentialAdapter (private val context: Context, private val circulationCards: CirculationCardX):
+    RecyclerView.Adapter<CirculationCardViewHolder>() {
     var onItemClick:((CirculationCard) -> Unit) ?= null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CirculationCardViewHolder {
         val binding = CirculationCardItemBinding.inflate(LayoutInflater.from(context))
-        return CirculationCardViewHolder(binding)
+        return CirculationCardViewHolder(binding,context)
     }
 
     override fun onBindViewHolder(holder: CirculationCardViewHolder, position: Int) {
-        holder.bind(circulationCards[position], onItemClick)
+        holder.bind(circulationCards.circulation_cards?.get(position)!!, onItemClick)
+        holder.itemView.setOnClickListener {
+            if(context is MainActivity) context.selectedCard(circulationCards.circulation_cards?.get(position)!!)
+        }
     }
 
-    override fun getItemCount(): Int = circulationCards.size
+    override fun getItemCount(): Int = circulationCards.circulation_cards?.size!!
 }

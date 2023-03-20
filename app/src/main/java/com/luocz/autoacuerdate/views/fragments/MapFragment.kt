@@ -205,7 +205,7 @@ class MapFragment : Fragment(R.layout.fragment_map), OnMapReadyCallback, Locatio
             .position(coordinates)
             .title("DGTIC-UNAM")
             .snippet("Cursos y diplomados en TIC")
-            .icon(BitmapDescriptorFactory.fromResource(R.drawable.logo_app))
+       //     .icon(BitmapDescriptorFactory.fromResource(R.drawable.logo_app))
         map.addMarker(marker)
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(coordinates, 18f),

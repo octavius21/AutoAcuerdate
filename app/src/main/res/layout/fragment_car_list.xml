@@ -19,7 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4F0CC3"
+    style="@style/background"
     tools:context=".views.fragments.CarListFragment">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCars"
@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_add_circle_24"
         android:layout_gravity="bottom|right"
+        style="@style/floatingActionButton"
         android:layout_marginBottom="70dp"
         android:layout_marginEnd="20dp"/>
 

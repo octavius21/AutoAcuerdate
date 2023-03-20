@@ -12,6 +12,10 @@
   ~ ****************************************************************************/
   -->
 
+<!--<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/md_theme_light">
+</ripple>-->
+<!--TODO REvisar que color trae-->
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/purple_500">
+    android:color="@color/color_plate_green">
 </ripple>

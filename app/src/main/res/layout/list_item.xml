@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 20/03/23 10:08
+  ~ *  File: list_item.xml
+  ~ *  Last modified: 20/03/23 10:08
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 20/03/23 10:08
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:padding="10dp"/>
+

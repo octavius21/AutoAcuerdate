@@ -19,6 +19,13 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.luocz.autoacuerdate.R
@@ -35,11 +42,16 @@ import retrofit2.Response
 
 class CarListFragment : Fragment(R.layout.fragment_car_list) {
     private lateinit var  binding : FragmentCarListBinding
+    private lateinit var navController: NavController
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCarListBinding.bind(view)
         binding.fabCars.setOnClickListener {
             Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
+
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.action_carListFragment_to_carAddFragment)
+
         }
         binding.pbConexion.visibility = View.VISIBLE
         val call = RetrofitServices.getRetrofit().create(CarApi::class.java)

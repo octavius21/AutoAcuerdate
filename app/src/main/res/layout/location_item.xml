@@ -16,11 +16,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    style="@style/background">
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/primary_color_app_theme_white"
         app:layout_constraintBottom_toBottomOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/guideline4"
         app:layout_constraintStart_toStartOf="@id/guideline3"
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+
         android:src="@drawable/ic_baseline_location_on_24"
         app:layout_constraintTop_toTopOf="@id/guideline1"
         app:layout_constraintStart_toStartOf="@id/guideline3"

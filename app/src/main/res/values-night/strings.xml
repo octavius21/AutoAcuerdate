@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<!--
   ~ /***************************************************************************
   ~ *  Author: Luis Octavio Goméz de la Cruz
   ~ *  Date created: 22/01/23 12:10
   ~ *  File: strings.xml
-  ~ *  Last modified: 18/01/23 12:29
+  ~ *  Last modified: 21/01/23 0:59
   ~ *  Last change:
   ~ *    Change Name ->
   ~ *    Change Date -> 22/01/23 12:10
@@ -14,6 +14,7 @@
 
 
 <resources>
+    <string name="app_name">AutoAcuerdate</string>
     <!--    InfoAPP-->
     <string name="appVersion">1.0.0</string>
     <string name="appAuthor">Luocz</string>
@@ -25,4 +26,76 @@
     <string name="credential_menu">Credential</string>
     <string name="map_menu">Map</string>
     <string name="account_menu">Account</string>
+    <string name="locations_menu">Locations</string>
+    <!--    Color plates-->
+    <string name="color_plate_yellow">AMARILLO</string>
+    <string name="color_plate_pink">ROSA</string>
+    <string name="color_plate_red">ROJO</string>
+    <string name="color_plate_blue">AZUL</string>
+    <string name="color_plate_green">VERDE</string>
+    <!--    Info-->
+    <string name="nacionality">Nacionality: %s</string>
+    <string name="model">Model: %s</string>
+    <string name="year">Year: %s</string>
+    <string name="left_pressure_tire">Tire pressure: %s</string>
+    <string name="right_pressure_tire">%s :Tire pressure</string>
+    <string name="mileage">Mileage: %s</string>
+    <!--  Array Models Cars -->
+    <string-array name="Models">
+        <item name="volkswagen">Volkswagen</item>
+        <item name="toyota">Toyota</item>
+        <item name="seat">Seat</item>
+        <item name="jeep">Jeep</item>
+        <item name="tesla">Tesla</item>
+    </string-array>
+    <string-array name="Nationality">
+        <item name="EU">United Estates</item>
+        <item name="Mexico">Mexico</item>
+        <item name="Alemania">Alemania</item>
+        <item name="Italiano">Italiano</item>
+    </string-array>
+    <string-array name="ColorPlates">
+        <item name="color_plate_yellow">AMARILLO</item>
+        <item name="color_plate_pink">ROSA</item>
+        <item name="color_plate_red">ROJO</item>
+        <item name="color_plate_blue">AZUL</item>
+        <item name="color_plate_green">VERDE</item>
+        <item name="color_plate_none">NONE</item>
+    </string-array>
+
+    <!--    <string name="mileage">Mileage: %s</string>-->
+    <string name="email_send">A verification email has been sent to your email</string>
+    <string name="fail_email_send">Failed to send email</string>
+    <string name="reset_password">Reset password</string>
+    <string name="enter_reset_password">Enter your password to get link to restore</string>
+    <string name="send">send</string>
+    <string name="send_mail_reset">The link send to email for restore your password</string>
+    <string name="fail_send_mail_reset">Couldn\'t send email for restore your password</string>
+    <string name="warning_send_mail_reset">Please enter your email</string>
+    <string name="failed">Failed</string>
+    <string name="request_permission_title">Permiso requerido</string>
+    <string name="request_permission_msg">Se necesita acceder a la ubicación para esta funcionalidad</string>
+    <string name="request_permission_ok">De acuerdo</string>
+    <string name="request_permission_cancel">Cancelar</string>
+    <string name="request_permission_reject">El permiso a la localización se ha negado (Ir a configuraciones si desea modificar)</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="error_invalid_email">Error: Invalid Format for the email</string>
+    <string name="error_wrong_password">Error: Invalid password</string>
+    <string name="error_account_exists_with_diff_credentials">Error: the account is exist with same email but diference data to log in</string>
+    <string name="error_email_already_in_use">Error: the email this is in use with another account</string>
+    <string name="error_user_token_expired">Error: Expired session, please log in again</string>
+    <string name="error_user_not_found">Error: User not found</string>
+    <string name="error_weak_password">Error: The password need more elements, min. 6 characteres</string>
+    <string name="not_network">Error: Network not enable or interrumpter</string>
+    <string name="error_unknown">Error: What did you do?</string>
+
 </resources>

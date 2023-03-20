@@ -12,13 +12,13 @@
   ~ *
   ~ ****************************************************************************/
   -->
-
+<!--TODO: Cambiar el texto duro a cadenas controladas-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_screen_app_theme_white"
+    style="@style/background"
     tools:context=".views.activities.LoginActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         android:orientation="vertical">
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/containerTextInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -50,7 +50,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilContrasenia"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/containerTextInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -79,40 +79,46 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:backgroundTint="@color/primary_color_app_theme_white"
+            style="@style/colorBottonLogin"
             android:text="Ingresar"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="16dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRegistrarse"
-            style="@style/textButton"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:backgroundTint="@color/second_color_app_theme_white"
+            style="@style/colorBottonRegister"
             android:text="Registrarse"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
             android:textStyle="bold"
             app:cornerRadius="16dp" />
 
         <TextView
             android:id="@+id/tvRestablecerPassword"
-            style="@style/textcolorSubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
+            style="@style/colorBottonForget"
             android:text="¿Olvidó su contraseña? Restablecer aquí"
-            android:textAlignment="center"
-            android:textColor="@color/third_color_app_theme_white"/>
+            android:textAlignment="center"/>
+        <ImageButton
+            android:id="@+id/ibtnHuella"
+            style="@style/FingerPrint"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_fingerprint_24" />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"

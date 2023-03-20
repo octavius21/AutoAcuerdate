@@ -52,10 +52,10 @@ class CarViewHolder(val binding: CarItemBinding, val context: Context):RecyclerV
     private fun SelectedColor(color: String):Drawable?{
            return when(color){
                 context.getString(R.string.color_plate_blue) -> context.getDrawable(R.color.color_plate_blue)
-                context.getString(R.string.color_plate_red) -> context.getDrawable(R.color.color_plate_red)
                 context.getString(R.string.color_plate_yellow) -> context.getDrawable(R.color.color_plate_yellow)
                 context.getString(R.string.color_plate_green) -> context.getDrawable(R.color.color_plate_green)
                 context.getString(R.string.color_plate_pink) -> context.getDrawable(R.color.color_plate_pink)
+               context.getString(R.string.color_plate_red) -> context.getDrawable(R.color.color_plate_red)
                 else -> context.getDrawable(R.color.white)
             }
     }

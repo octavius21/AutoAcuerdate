@@ -16,6 +16,8 @@
 package com.luocz.autoacuerdate.models
 
 import java.util.*
+import kotlin.collections.ArrayList
+import com.google.gson.annotations.SerializedName
 
 /*data class CirculationCard(
     val name: String,
@@ -24,17 +26,23 @@ import java.util.*
     val efe_date: Date?
 
 )*/
-data class CirculationCard(
-    val circulation_cards: List<CirculationCardX>?
+data class CirculationCardX(
+    val circulation_cards: ArrayList<CirculationCard>?
 )
 
-data class CirculationCardX(
-    val efe_date: String?,
-    val exp_date: String?,
-    val id_card: String?,
-    val itin: String?,
-    val name: String?,
-    val orgin: String?
+data class CirculationCard(
+    @SerializedName("efe_date")
+    val efe_date: String? = null,
+    @SerializedName("exp_date")
+    val exp_date: String? = null,
+    @SerializedName("id_car")
+    val id_card: String? = null,
+    @SerializedName("itin")
+    val itin: String? = null,
+    @SerializedName("name")
+    val name: String? = null,
+    @SerializedName("origin")
+    val origin: String? = null
 )
 
 

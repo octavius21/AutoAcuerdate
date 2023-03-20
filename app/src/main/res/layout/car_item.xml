@@ -14,24 +14,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:foreground="@drawable/custom_selector_choice_ripple"
+    style="@style/SelectableItemBackground"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-<!--TODO REALIZAR MEJRO DISEÑO DE ITEM BACK-->
-<!--    android:background="@drawable/splash_screen_app_theme_white"-->
-<!--    Tambien la view no me respeta el ultimo guide me lo corta antes-->
-<!--    o el caso de que nunca se detenga-->
+
     <View
+        style="@style/containersCar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/second_color_app_theme_white"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp"
         app:layout_constraintBottom_toBottomOf="@id/guideline5"
-        app:layout_constraintTop_toTopOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/ivCar"
@@ -40,6 +38,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
+        style="@style/containersImage"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/guideline5"
         app:layout_constraintEnd_toEndOf="@id/guideline6"
@@ -50,15 +49,17 @@
 
     <TextView
         android:id="@+id/tvBrand"
+        style="@style/textcolorH4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:elevation="5dp"
         android:includeFontPadding="false"
         android:paddingTop="8dp"
-        style="@style/textcolorH4"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline6"
         app:layout_constraintTop_toTopOf="@id/guideline4"
         tools:text="Brand_Car" />
@@ -69,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:elevation="3dp"
         style="@style/textcolorOverline"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
@@ -83,6 +85,7 @@
         android:scaleType="fitXY"
         app:riv_corner_radius="30dp"
         android:layout_marginStart="5dp"
+        style="@style/containersImage"
         app:layout_constraintEnd_toStartOf="@id/tvLicensePlate"
         app:layout_constraintStart_toStartOf="@id/guideline6"
         app:layout_constraintTop_toBottomOf="@id/tvModel"
@@ -96,6 +99,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="4dp"
+        android:elevation="3dp"
         style="@style/textcolorSubtitle"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"

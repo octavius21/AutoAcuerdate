@@ -40,6 +40,29 @@
     <string name="left_pressure_tire">Tire pressure: %s</string>
     <string name="right_pressure_tire">%s :Tire pressure</string>
     <string name="mileage">Mileage: %s</string>
+    <!--  Array Models Cars -->
+    <string-array name="Models">
+        <item name="volkswagen">Volkswagen</item>
+        <item name="toyota">Toyota</item>
+        <item name="seat">Seat</item>
+        <item name="jeep">Jeep</item>
+        <item name="tesla">Tesla</item>
+    </string-array>
+    <string-array name="Nationality">
+        <item name="EU">United Estates</item>
+        <item name="Mexico">Mexico</item>
+        <item name="Alemania">Alemania</item>
+        <item name="Italiano">Italiano</item>
+    </string-array>
+    <string-array name="ColorPlates">
+        <item name="color_plate_yellow">AMARILLO</item>
+        <item name="color_plate_pink">ROSA</item>
+        <item name="color_plate_red">ROJO</item>
+        <item name="color_plate_blue">AZUL</item>
+        <item name="color_plate_green">VERDE</item>
+        <item name="color_plate_none">NONE</item>
+    </string-array>
+
     <!--    <string name="mileage">Mileage: %s</string>-->
     <string name="email_send">A verification email has been sent to your email</string>
     <string name="fail_email_send">Failed to send email</string>

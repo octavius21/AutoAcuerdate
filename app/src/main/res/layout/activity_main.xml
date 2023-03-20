@@ -12,13 +12,13 @@
   ~ ****************************************************************************/
   -->
 
-<!--TODO -> Realizar que los datos esten arriba-->
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/background"
     tools:context=".views.activities.MainActivity">
 
 
@@ -27,11 +27,12 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="top"
         android:layout_marginBottom="20dp"
         app:defaultNavHost="true"
-        android:layout_gravity="top"
         app:navGraph="@navigation/nav_graph" />
-        <com.google.android.material.bottomappbar.BottomAppBar
+
+    <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/babMain"
             style="@style/BottomAppBarStyle"
             android:layout_width="match_parent"

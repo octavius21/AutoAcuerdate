@@ -13,7 +13,11 @@
   -->
 
 
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/md_theme_dark_onPrimaryContainer" android:state_checked="true"/>
+    <item android:color="@color/md_theme_dark_primaryContainer"/>
+</selector>-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/primary_color_app_theme_black" android:state_checked="true"/>
-    <item android:color="@color/black"/>
+    <item android:color="@color/md_theme_dark_surfaceTint" android:state_checked="true"/>
+    <item android:color="@color/md_theme_dark_surface"/>
 </selector>

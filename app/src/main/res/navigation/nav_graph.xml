@@ -26,7 +26,14 @@
         tools:layout="@layout/fragment_car_list" >
         <action
             android:id="@+id/action_carListFragment_to_carDetailFragment"
-            app:destination="@id/carDetailFragment" />
+            app:destination="@id/carDetailFragment"
+            app:popUpTo="@id/carDetailFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_carListFragment_to_carAddFragment"
+            app:destination="@id/carAddFragment"
+            app:popUpTo="@id/carAddFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/credentialsListFragment"
@@ -62,4 +69,19 @@
         android:name="com.luocz.autoacuerdate.views.fragments.LocationDetailFragment"
         android:label="Location Detail"
         tools:layout="@layout/fragment_location_detail" />
+    <fragment
+        android:id="@+id/carAddFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.CarAddFragment"
+        android:label="CarAddFragment" >
+        <action
+            android:id="@+id/action_carAddFragment_to_carListFragment"
+            app:destination="@id/carListFragment"
+            app:popUpTo="@id/carAddFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.luocz.autoacuerdate.views.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>

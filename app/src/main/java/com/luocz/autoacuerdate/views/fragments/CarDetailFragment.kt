@@ -41,6 +41,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
+
 class CarDetailFragment : Fragment(R.layout.fragment_car_detail) {
 private lateinit var  binding: FragmentCarDetailBinding
 
@@ -113,12 +114,13 @@ private lateinit var  binding: FragmentCarDetailBinding
         })
     }
     private fun SelectedColor(color: String): Drawable?{
+        Toast.makeText(requireContext(), color,Toast.LENGTH_LONG).show()
         return when(color){
             requireContext().getString(R.string.color_plate_blue) -> getDrawable(requireContext(),R.color.color_plate_blue)
             requireContext().getString(R.string.color_plate_red) -> getDrawable(requireContext(),R.color.color_plate_red)
             requireContext().getString(R.string.color_plate_yellow) -> getDrawable(requireContext(),R.color.color_plate_yellow)
-            requireContext().getString(R.string.color_plate_green) -> getDrawable(requireContext(),R.color.color_plate_green)
             requireContext().getString(R.string.color_plate_pink) -> getDrawable(requireContext(),R.color.color_plate_pink)
+            requireContext().getString(R.string.color_plate_green) -> getDrawable(requireContext(),R.color.color_plate_green)
             else -> getDrawable(requireContext(),R.color.white)
         }
     }
