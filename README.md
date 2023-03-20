@@ -37,6 +37,10 @@ _Aqui podras encontrar los sitios añadidos los cuales puedes agregar o eliminar
 
 _Aqui Activar o Desactivar el Ingreso por huella digital para un acceso mas rapido_
 
+### Credenciales de Acceso
+User: cuq1@live.com.mx
+pwd: 123456
+
 ### Frameworks/Dependecias/Packages
 
 - retrofitVersion = '2.9.0'
