@@ -39,9 +39,38 @@ _Aqui Activar o Desactivar el Ingreso por huella digital para un acceso mas rapi
 
 ### Frameworks/Dependecias/Packages
 
-* [Git](https://git-scm.com) - El versionamiento a usar en esta caso la 2.32.0
-* [GitKraken](https://www.gitkraken.com) - El IDE para visualizar mejor el versionamiento, version 7.6.1
-* [VisualCode](https://code.visualstudio.com) - El IDE para visualizar mejor los cambios realizados en los archivos, version 1.57
+- retrofitVersion = '2.9.0'
+- glideVersion = '4.14.2'
+- picassoVersion  = '2.71828'
+- roundedimageVersion  = '2.3.0'
+- navigationVersion = '2.5.3'
+- refreshVersion = '1.1.0'
+- lifecycleVersion = '2.5.1'
+- fragmentVersion = '1.5.4'
+- splashVersion = '1.0.0'
+- googlemapsVersion = '18.1.0'
+- firebaseauthVersion = '21.1.0'
+- encryptedVersion='1.1.0-alpha04'
+- biometricVersion='1.1.0'
+- recyclerviewVersion='1.3.0'
+
+
+
+## Wiki 📖
+
+_Puedes encontrar mucho más información al respecto en:_
+* [Material Design]( https://m3.material.io/components/) - Design
+* [Implementation Material Design]( https://github.com/material-components/material-components-android/blob/master/docs/components/) - Implementation
+* [Implementation MD DropBox](https://www.google.com/search?q=Implementing+an+exposed+dropdown+menu&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:8a09afc8,vid:isZ1vrOuG2o) - MDDropBox
+* [BuilderTheme](https://m3.material.io/theme-builder#/custom) - Builder Theme
+* [Colors](https://m3.material.io/styles/color/the-color-system/color-roles) - Roles Colors 
+
+
+
+## Autores ✒️
+
+* **Luis Gomez** - *Trabajo Final* - [Ing. Luis Octavio](https://github.com/octavius21)
+
 
 ### Preview 
 
@@ -66,20 +95,3 @@ _Aqui Activar o Desactivar el Ingreso por huella digital para un acceso mas rapi
 ![Image text](https://raw.githubusercontent.com/octavius21/AutoAcuerdate/master/6.jpg)
 ![Image text](https://raw.githubusercontent.com/octavius21/AutoAcuerdate/master/7.jpg)-->
 
-
-## Wiki 📖
-
-_Puedes encontrar mucho más información al respecto en:_
-* [Material Design]( https://m3.material.io/components/) - Design
-* [Implementation Material Design]( https://github.com/material-components/material-components-android/blob/master/docs/components/) - Implementation
-* [Implementation MD DropBox](https://www.google.com/search?q=Implementing+an+exposed+dropdown+menu&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:8a09afc8,vid:isZ1vrOuG2o) - MDDropBox
-* [BuilderTheme](https://m3.material.io/theme-builder#/custom) - Builder Theme
-* [Colors](https://m3.material.io/styles/color/the-color-system/color-roles) - Roles Colors 
-
-
-
-
-
-## Autores ✒️
-
-* **Luis Gomez** - *Trabajo Final* - [Ing. Luis Octavio](https://github.com/octavius21)
