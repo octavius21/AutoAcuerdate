@@ -14,21 +14,30 @@
 
 package com.luocz.autoacuerdate.views.fragments
 
+
 import android.os.Bundle
 import android.view.*
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import androidx.core.view.MenuHost
-import androidx.core.view.MenuProvider
 import androidx.navigation.fragment.findNavController
 import com.luocz.autoacuerdate.R
 import com.luocz.autoacuerdate.databinding.FragmentCarAddBinding
-import com.google.android.material.resources.MaterialResources;
+import com.luocz.autoacuerdate.models.Photo
 
 class CarAddFragment : Fragment(R.layout.fragment_car_add), AdapterView.OnItemClickListener {
     private lateinit var binding: FragmentCarAddBinding
+    val pickMedia = registerForActivityResult(ActivityResultContracts.PickVisualMedia()){
+            uri ->
+        if(uri !=null){
+            binding.ivCarAdd.setImageURI(uri)
+        }else{
+            binding.ivCarAdd.setImageResource(R.drawable.ic_round_directions_car_24)
+        }
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCarAddBinding.bind(view)
@@ -39,7 +48,16 @@ class CarAddFragment : Fragment(R.layout.fragment_car_add), AdapterView.OnItemCl
         binding.btnDone.setOnClickListener {
             findNavController().navigate(R.id.action_carAddFragment_to_carListFragment)
         }
+        binding.fabImage.setOnClickListener {
+            pickMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+        }
+
     }
+
+
+
+
+
 
     private fun dropDownListSetUp() {
         val models = resources.getStringArray(R.array.Models)

@@ -49,7 +49,11 @@
         android:id="@+id/userFragment"
         android:name="com.luocz.autoacuerdate.views.fragments.UserFragment"
         android:label="Account"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_generalInformationFragment"
+            app:destination="@id/generalInformationFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/carDetailFragment"
         android:name="com.luocz.autoacuerdate.views.fragments.CarDetailFragment"
@@ -84,4 +88,9 @@
         android:name="com.luocz.autoacuerdate.views.activities.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/generalInformationFragment"
+        android:name="com.luocz.autoacuerdate.views.fragments.GeneralInformationFragment"
+        android:label="Information"
+        tools:layout="@layout/fragment_general_information" />
 </navigation>

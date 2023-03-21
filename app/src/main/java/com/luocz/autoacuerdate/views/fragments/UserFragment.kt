@@ -29,10 +29,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
+import androidx.core.os.bundleOf
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import com.google.firebase.auth.FirebaseAuth
@@ -203,18 +205,25 @@ class UserFragment : Fragment(R.layout.fragment_user) {
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 // Validate and handle the selected menu item
                 when (menuItem.itemId) {
-                    R.id.navigation_setting -> {
-//                        TODO Implementar PreferenceScreen en kotlin
+                  /*  R.id.navigation_setting -> {
                         Toast.makeText(
                             requireContext(), "Settings",
                             Toast.LENGTH_LONG
                         ).show()
-                    }
+                    }*/
                     R.id.navigation_contact -> {
-                        Toast.makeText(requireContext(), "contact", Toast.LENGTH_LONG).show()
+                        val parametros = Bundle().apply {
+                            putInt("opcion",1)
+                        }
+                        findNavController().navigate(R.id.action_userFragment_to_generalInformationFragment,parametros)
+//                        Toast.makeText(requireContext(), "contact", Toast.LENGTH_LONG).show()
                     }
                     R.id.navigation_about -> {
-                        Toast.makeText(requireContext(), "about", Toast.LENGTH_LONG).show()
+                        val parametros = Bundle().apply {
+                            putInt("opcion",2)
+                        }
+                        findNavController().navigate(R.id.action_userFragment_to_generalInformationFragment,parametros)
+//                        Toast.makeText(requireContext(), "about", Toast.LENGTH_LONG).show()
                     }
                 }
                 return true
@@ -224,12 +233,12 @@ class UserFragment : Fragment(R.layout.fragment_user) {
 
     private fun customMenu(menu: Menu) {
         var drawableMore: Drawable = menu.findItem(R.id.navigation_more).icon!!
-        var drawableSettings: Drawable = menu.findItem(R.id.navigation_setting).icon!!
+//        var drawableSettings: Drawable = menu.findItem(R.id.navigation_setting).icon!!
         var drawableContact: Drawable = menu.findItem(R.id.navigation_contact).icon!!
         var drawableAbout: Drawable = menu.findItem(R.id.navigation_about).icon!!
         //              Para saber si estoy en modo noche o no
         val mode = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
-//        binding.tvaux.text = mode.toString()
+
         when (mode) {
             Configuration.UI_MODE_NIGHT_YES -> {
                 drawableMore = DrawableCompat.wrap(drawableMore)
@@ -239,13 +248,13 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                         R.color.md_theme_dark_onSurfaceVariant
                     )
                 )
-                drawableSettings = DrawableCompat.wrap(drawableSettings)
+              /*  drawableSettings = DrawableCompat.wrap(drawableSettings)
                 DrawableCompat.setTint(
                     drawableSettings, ContextCompat.getColor(
                         requireContext(),
                         R.color.md_theme_dark_onSurfaceVariant
                     )
-                )
+                )*/
                 drawableContact = DrawableCompat.wrap(drawableContact)
                 DrawableCompat.setTint(
                     drawableContact, ContextCompat.getColor(
@@ -270,13 +279,13 @@ class UserFragment : Fragment(R.layout.fragment_user) {
                         R.color.md_theme_light_onSurfaceVariant
                     )
                 )
-                drawableSettings = DrawableCompat.wrap(drawableSettings)
+                /*drawableSettings = DrawableCompat.wrap(drawableSettings)
                 DrawableCompat.setTint(
                     drawableSettings, ContextCompat.getColor(
                         requireContext(),
                         R.color.md_theme_light_onSurfaceVariant
                     )
-                )
+                )*/
                 drawableContact = DrawableCompat.wrap(drawableContact)
                 DrawableCompat.setTint(
                     drawableContact, ContextCompat.getColor(

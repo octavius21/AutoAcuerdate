@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***************************************************************************
+  ~ *  Author: Luis Octavio Goméz de la Cruz
+  ~ *  Date created: 20/03/23 20:15
+  ~ *  File: fragment_general_information.xml
+  ~ *  Last modified: 20/03/23 20:14
+  ~ *  Last change:
+  ~ *    Change Name ->
+  ~ *    Change Date -> 20/03/23 20:15
+  ~ *    Description ->
+  ~ *
+  ~ ****************************************************************************/
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/background"
+    tools:context=".views.fragments.GeneralInformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvGeneralInfo"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AutoAcuerdate"
+            style="@style/textcolorH4"/>
+
+        <TextView
+            android:id="@+id/tvGeneralInfo2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textcolorH4"
+            android:text="Version:1.0.0-alpha" />
+        <TextView
+            android:id="@+id/tvGeneralInfo3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textcolorH4"
+            android:text="Thanks a Icons8 for your resources  named: Autonomous Vehicles" />
+        <TextView
+            android:id="@+id/tvGeneralInfo4"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textcolorH6"
+            android:text="https://icons8.com/icon/FSHPaZcJOOMx/autonomous-vehicles" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -21,11 +21,11 @@
         android:title=""
         app:showAsAction="always">
         <menu>
-            <item
+            <!--<item
                 android:id="@+id/navigation_setting"
                 android:icon="@drawable/ic_baseline_settings_24"
                 android:title="@string/settings_menu"
-                app:showAsAction="always" />
+                app:showAsAction="always" />-->
 
             <item
                 android:id="@+id/navigation_contact"
