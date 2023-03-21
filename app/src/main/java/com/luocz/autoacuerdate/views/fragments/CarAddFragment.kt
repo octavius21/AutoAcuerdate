@@ -19,20 +19,21 @@ import android.os.Bundle
 import android.view.*
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+
 import com.luocz.autoacuerdate.R
 import com.luocz.autoacuerdate.databinding.FragmentCarAddBinding
-import com.luocz.autoacuerdate.models.Photo
 
 class CarAddFragment : Fragment(R.layout.fragment_car_add), AdapterView.OnItemClickListener {
     private lateinit var binding: FragmentCarAddBinding
+    var imgUri = ""
     val pickMedia = registerForActivityResult(ActivityResultContracts.PickVisualMedia()){
             uri ->
         if(uri !=null){
+            imgUri = uri.toString()
             binding.ivCarAdd.setImageURI(uri)
         }else{
             binding.ivCarAdd.setImageResource(R.drawable.ic_round_directions_car_24)
@@ -118,7 +119,7 @@ class CarAddFragment : Fragment(R.layout.fragment_car_add), AdapterView.OnItemCl
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         val item = parent?.getItemAtPosition(position).toString()
-        Toast.makeText(requireContext(), item,Toast.LENGTH_LONG).show()
+//        Toast.makeText(requireContext(), item,Toast.LENGTH_LONG).show()
     }
 
 

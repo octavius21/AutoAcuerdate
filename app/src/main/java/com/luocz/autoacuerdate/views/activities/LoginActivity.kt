@@ -230,7 +230,6 @@ class LoginActivity : AppCompatActivity() {
     private fun validaCampos(): Boolean{
         email = binding.tietEmail.text.toString().trim()
         contrasenia = binding.tietContrasenia.text.toString().trim()
-
         if(email.isEmpty()){
             binding.tietEmail.error = resources.getString(R.string.warning_send_mail_reset)
             binding.tietEmail.requestFocus()
