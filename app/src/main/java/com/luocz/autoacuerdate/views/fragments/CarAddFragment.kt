@@ -55,6 +55,12 @@ class CarAddFragment : Fragment(R.layout.fragment_car_add), AdapterView.OnItemCl
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        //Volver a poner los dropdownlist cuando se cambie de app o de theme
+        dropDownListSetUp()
+    }
+
 
 
 
