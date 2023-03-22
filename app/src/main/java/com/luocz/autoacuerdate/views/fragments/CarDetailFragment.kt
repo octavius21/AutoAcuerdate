@@ -50,7 +50,7 @@ private lateinit var  binding: FragmentCarDetailBinding
         binding = FragmentCarDetailBinding.bind(view)
 
         val id = arguments?.getString("ID_CAR","0")
-        Toast.makeText(requireContext(),"${id.toString()}",Toast.LENGTH_SHORT).show()
+//        Toast.makeText(requireContext(),"${id.toString()}",Toast.LENGTH_SHORT).show()
 
         val call = RetrofitServices.getRetrofit().create(CarApi::class.java).getCarDetail(id.toString())
         call.enqueue(object : Callback<Car> {
@@ -114,7 +114,7 @@ private lateinit var  binding: FragmentCarDetailBinding
         })
     }
     private fun SelectedColor(color: String): Drawable?{
-        Toast.makeText(requireContext(), color,Toast.LENGTH_LONG).show()
+//        Toast.makeText(requireContext(), color,Toast.LENGTH_LONG).show()
         return when(color){
             requireContext().getString(R.string.color_plate_blue) -> getDrawable(requireContext(),R.color.color_plate_blue)
             requireContext().getString(R.string.color_plate_red) -> getDrawable(requireContext(),R.color.color_plate_red)

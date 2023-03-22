@@ -47,7 +47,7 @@ class CarListFragment : Fragment(R.layout.fragment_car_list) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCarListBinding.bind(view)
         binding.fabCars.setOnClickListener {
-            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
 
             findNavController().navigateUp()
             findNavController().navigate(R.id.action_carListFragment_to_carAddFragment)

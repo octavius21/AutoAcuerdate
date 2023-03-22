@@ -62,7 +62,7 @@
     <fragment
         android:id="@+id/locationFragment"
         android:name="com.luocz.autoacuerdate.views.fragments.LocationListFragment"
-        android:label="Locations"
+        android:label="Top weak Locations"
         tools:layout="@layout/fragment_location_list" >
         <action
             android:id="@+id/action_locationFragment_to_locationDetailFragment"

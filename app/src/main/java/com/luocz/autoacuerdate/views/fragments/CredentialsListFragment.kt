@@ -45,7 +45,7 @@ class CredentialsListFragment : Fragment(R.layout.fragment_credentials_list) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCredentialsListBinding.bind(view)
         binding.fabCredentials.setOnClickListener {
-            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
         }
         binding.pbConexion.visibility = View.VISIBLE
         val call = RetrofitServices.getRetrofit().create(CarApi::class.java).getCards("cards")

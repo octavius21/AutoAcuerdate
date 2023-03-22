@@ -40,9 +40,9 @@ class LocationListFragment : Fragment(R.layout.fragment_location_list) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentLocationListBinding.bind(view)
-        binding.fabLocations.setOnClickListener {
-            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
-        }
+       /* binding.fabLocations.setOnClickListener {
+//            Toast.makeText(requireContext(), Constants.TOAST_MSG_DEVELOPER, Toast.LENGTH_SHORT).show()
+        }*/
         binding.pbConexion.visibility = View.VISIBLE
         val call = RetrofitServices.getRetrofit().create(CarApi::class.java)
             .getLocations("locations")
